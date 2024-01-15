@@ -1,31 +1,79 @@
+@import "../assets/variables/Color";
+@import "../assets/variables/Mixin";
 @font-face {
-    font-family: b1;
-    src: url("../assets/fonts/b1.ttf");
-}
-@font-face {
-    font-family: b1;
-    src: url("../assets/fonts/b1.ttf");
-}
-@font-face {
-    font-family: b1;
-    src: url("../assets/fonts/b1.ttf");
-}
-@font-face {
-    font-family: b1;
-    src: url("../assets/fonts/b1.ttf");
-}
-@font-face {
-    font-family: b1;
-    src: url("../assets/fonts/b1.ttf");
-}
-@font-face {
-    font-family: b1;
-    src: url("../assets/fonts/b1.ttf");
+  font-family: game;
+  src: url("../assets/fonts/BruceForeverRegular-X3jd2.ttf");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 1px solid red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+  font-family: "game";
+}
+
+.Home {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color_background;
+  .nav-bar {
+    @include flex;
+    width: 100%;
+    height: 8vh;
+    padding: 0 3rem;
+    .nav-links {
+      @include flex;
+      gap: 1rem;
+      button {
+        @include button;
+        @include outline-dash;
+      }
+    }
   }
+  .main-body {
+    @include flex;
+    padding: 0 3rem;
+    width: 100%;
+    height: 84vh;
+    .avator-holder {
+      width: 40%;
+      @include outline-dash;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .routes-holder {
+      width: 60%;
+      @include outline-dash;
+      padding: 0 3rem;
+      height: 100%;
+      overflow-y: scroll;
+    }
+  }
+  .footer {
+    @include flex;
+    padding: 0 3rem;
+    width: 100%;
+    height: 8vh;
+    p {
+      font-size: 0.8rem;
+    }
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-right: -0.5rem;
+
+      img {
+        padding: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}

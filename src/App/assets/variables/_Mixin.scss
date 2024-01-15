@@ -1,0 +1,21 @@
+@import "../variables/Color";
+
+@mixin flex() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin button() {
+  all: unset;
+
+  height: 2.5rem;
+  width: max-content;
+  padding: 0 2rem;
+  cursor: pointer;
+  &:hover {
+    outline: 1px solid red;
+  }
+}
+@mixin outline-dash() {
+  outline: 1px solid $color_text_primary;
+}
