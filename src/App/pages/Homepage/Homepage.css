@@ -1,0 +1,31 @@
+.Homepage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.Homepage .homepage-text {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.Homepage .homepage-text h1 {
+  font-size: 4rem;
+}
+.Homepage .homepage-text h2 {
+  font-size: 1.5rem;
+}
+.Homepage .homepage-text button {
+  all: unset;
+  height: 2.5rem;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 2rem;
+  outline: 1px solid #000000;
+  cursor: pointer;
+  padding: 0.3rem 3rem;
+}
+.Homepage .homepage-text button:hover {
+  outline: 1px solid #03d8f3;
+  color: #03d8f3;
+}/*# sourceMappingURL=Homepage.css.map */

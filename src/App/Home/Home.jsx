@@ -1,8 +1,10 @@
 import React from "react";
 import "./Home.css";
 // Images
-import avator from "../assets/images/Edgerunner David, LEGION.jpeg";
+import avator from "../assets/images/pexels-emmy-e-2381069.jpg";
 import telegramIc from "../assets/icons/telegram.svg";
+import Homepage from "../pages/Homepage/Homepage";
+import About from "../pages/About/About";
 function Home() {
   return (
     <div className="Home">
@@ -19,8 +21,14 @@ function Home() {
       <div className="main-body">
         <div className="avator-holder">
           <img src={avator} alt="" />
+          <div className="avator-overlay">
+            <div className="nottifications">nottification</div>
+          </div>
         </div>
-        <div className="routes-holder">Test</div>
+        <div className="routes-holder">
+          {/* <Homepage /> */}
+          <About />
+        </div>
       </div>
       <div className="footer">
         <p>&copy; Copyright</p>

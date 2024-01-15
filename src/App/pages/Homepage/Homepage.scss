@@ -1,0 +1,23 @@
+@import "../../assets/variables/Color";
+@import "../../assets/variables/Mixin";
+.Homepage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .homepage-text {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    button {
+      @include button;
+      padding: 0.3rem 3rem;
+    }
+  }
+}

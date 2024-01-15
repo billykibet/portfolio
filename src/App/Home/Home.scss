@@ -9,10 +9,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  // outline: 1px solid red;
   font-family: "game";
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .Home {
   width: 100vw;
   height: 100vh;
@@ -38,6 +40,7 @@
     height: 84vh;
     .avator-holder {
       width: 40%;
+      position: relative;
       @include outline-dash;
       height: 100%;
 
@@ -45,6 +48,18 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      .avator-overlay {
+        background: $color_background;
+        height: 100%;
+
+        width: 100%;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        transition: opacity 0.5s;
       }
     }
     .routes-holder {

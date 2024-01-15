@@ -1,0 +1,17 @@
+@import "../../assets/variables/Color";
+@import "../../assets/variables/Mixin";
+.About {
+  .header {
+    @include header;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    color: $color_text_secondary;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .sub-header {
+    @include sub-header;
+  }
+}
