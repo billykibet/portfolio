@@ -6,12 +6,17 @@
     margin-bottom: 1.5rem;
   }
   p {
-    color: $color_text_secondary;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    @include paragraph;
     margin-bottom: 1rem;
   }
   .sub-header {
     @include sub-header;
+    margin-top: 3rem;
+  }
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
 }

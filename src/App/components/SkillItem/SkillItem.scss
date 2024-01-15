@@ -1,0 +1,29 @@
+@import "../../assets/variables/Color";
+@import "../../assets/variables/Mixin";
+.SkillItem {
+  @include outline-dash;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 48%;
+  height: max-content;
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+  .skill-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    h4 {
+      font-size: 1rem;
+    }
+    p {
+      @include paragraph;
+      line-height: 1.3rem;
+      font-size: 0.8rem;
+      margin-bottom: unset;
+    }
+  }
+}

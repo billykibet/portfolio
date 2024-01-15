@@ -23,7 +23,7 @@
 }
 @mixin header() {
   font-size: 2rem;
-  padding-top: 3rem;
+
   display: flex;
   flex-direction: column;
   &::after {
@@ -40,5 +40,11 @@
 }
 
 @mixin sub-header() {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+
+@mixin paragraph() {
+  color: $color_text_secondary;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }

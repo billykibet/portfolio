@@ -26,8 +26,8 @@ function Home() {
           </div>
         </div>
         <div className="routes-holder">
-          {/* <Homepage /> */}
-          <About />
+          <Homepage />
+          {/* <About /> */}
         </div>
       </div>
       <div className="footer">

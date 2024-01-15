@@ -1,4 +1,5 @@
 import React from "react";
+import "./SkillItem.css";
 
 function SkillItem({ icon, name, desc }) {
   return (

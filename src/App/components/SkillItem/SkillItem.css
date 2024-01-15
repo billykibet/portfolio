@@ -1,0 +1,30 @@
+.SkillItem {
+  outline: 1px solid #000000;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 48%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.SkillItem img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.SkillItem .skill-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.SkillItem .skill-text h4 {
+  font-size: 1rem;
+}
+.SkillItem .skill-text p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  margin-bottom: unset;
+}/*# sourceMappingURL=SkillItem.css.map */
