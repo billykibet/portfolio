@@ -4,7 +4,10 @@
   font-family: game;
   src: url("../assets/fonts/BruceForeverRegular-X3jd2.ttf");
 }
-
+@font-face {
+  font-family: punk;
+  src: url("../assets/fonts/Cyberpunk.otf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +27,10 @@
     width: 100%;
     height: 8vh;
     padding: 0 3rem;
+    .logo {
+      // font-size: 1.5rem;
+      // font-family: "punk";
+    }
     .nav-links {
       @include flex;
       gap: 1rem;

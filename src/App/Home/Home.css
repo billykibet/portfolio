@@ -2,6 +2,10 @@
   font-family: game;
   src: url("../assets/fonts/BruceForeverRegular-X3jd2.ttf");
 }
+@font-face {
+  font-family: punk;
+  src: url("../assets/fonts/Cyberpunk.otf");
+}
 * {
   margin: 0;
   padding: 0;

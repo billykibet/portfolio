@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
+
 // Images
 import avator from "../assets/images/pexels-emmy-e-2381069.jpg";
 import telegramIc from "../assets/icons/telegram.svg";
 import Homepage from "../pages/Homepage/Homepage";
 import About from "../pages/About/About";
+import Contact from "../pages/Contact/Contact";
 function Home() {
   return (
     <div className="Home">
@@ -12,7 +14,7 @@ function Home() {
         <h1 className="logo">BILLY K.</h1>
 
         <div className="nav-links">
-          <button>Home</button>
+          <button className="cyber-button">Home</button>
           <button>About</button>
           <button>Portfolio</button>
           <button>Contact</button>
@@ -26,12 +28,13 @@ function Home() {
           </div>
         </div>
         <div className="routes-holder">
-          <Homepage />
-          {/* <About /> */}
+          {/* <Homepage /> */}
+          <About />
+          {/* <Contact /> */}
         </div>
       </div>
       <div className="footer">
-        <p>&copy; Copyright</p>
+        <p>&copy; Copyright </p>
         <div className="social-icons">
           <img src={telegramIc} alt="" />
           <img src={telegramIc} alt="" />
