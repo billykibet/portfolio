@@ -2,12 +2,9 @@
 @import "../assets/variables/Mixin";
 @font-face {
   font-family: game;
-  src: url("../assets/fonts/BruceForeverRegular-X3jd2.ttf");
+  src: url("../assets/fonts/Inter-Regular.ttf");
 }
-@font-face {
-  font-family: punk;
-  src: url("../assets/fonts/Cyberpunk.otf");
-}
+
 * {
   margin: 0;
   padding: 0;
