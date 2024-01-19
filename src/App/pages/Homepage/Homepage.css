@@ -34,6 +34,9 @@
   all: unset;
   height: 2.2rem;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: -moz-max-content;
   width: max-content;
   padding: 0 2rem;
