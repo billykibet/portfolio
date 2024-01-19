@@ -1,4 +1,31 @@
+@import "../../assets//variables/Color";
+@import "../../assets//variables/Mixin";
 .Portfolio {
   width: 100%;
   height: max-content;
+  h1 {
+    @include header;
+  }
+  .custom-filter-holder {
+    width: 100%;
+    margin-top: 1.5rem;
+    height: max-content;
+    display: flex;
+    gap: 1rem;
+    button {
+      all: unset;
+      font-family: "regular";
+      font-size: 0.9rem;
+      cursor: pointer;
+      &:hover {
+        color: $color_shine;
+        font-family: "semi";
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .projects-holder {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
 }

@@ -7,6 +7,7 @@ import telegramIc from "../assets/icons/telegram.svg";
 import Homepage from "../pages/Homepage/Homepage";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import Portfolio from "../pages/Portfolio/Portfolio";
 function Home() {
   return (
     <div className="Home">
@@ -30,7 +31,8 @@ function Home() {
         <div className="routes-holder">
           {/* <Homepage /> */}
           {/* <About /> */}
-          <Contact />
+          {/* <Contact /> */}
+          <Portfolio />
         </div>
       </div>
       <div className="footer">
