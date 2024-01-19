@@ -1,3 +1,29 @@
 .ProjectItem {
-  width: 50%;
+  flex: 0 0 48%;
+  cursor: pointer;
+}
+.ProjectItem .image-holder {
+  width: 100%;
+  height: 12rem;
+}
+.ProjectItem .image-holder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ProjectItem .title {
+  font-family: "semi";
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+}
+.ProjectItem .langs {
+  font-size: 0.9rem;
+  color: #a8b2d1;
+}
+.ProjectItem:hover .title {
+  margin-left: 0.5rem;
+}
+.ProjectItem:hover .langs {
+  margin-left: 1rem;
 }/*# sourceMappingURL=ProjectItem.css.map */

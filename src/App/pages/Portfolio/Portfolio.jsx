@@ -1,6 +1,7 @@
 import React from "react";
 import "./Portfolio.css";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import { data } from "../../assets/jsons/ProjectData";
 function Portfolio() {
   return (
     <div className="Portfolio">
@@ -15,14 +16,10 @@ function Portfolio() {
       </div>
       <div className="projects-holder">
         {/* Temp Data */}
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
+
+        {data.map((project) => (
+          <ProjectItem project={project} />
+        ))}
       </div>
     </div>
   );

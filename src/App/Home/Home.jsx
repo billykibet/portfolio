@@ -8,6 +8,7 @@ import Homepage from "../pages/Homepage/Homepage";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import Portfolio from "../pages/Portfolio/Portfolio";
+import ProjectView from "../pages/ProjectView/ProjectView";
 function Home() {
   return (
     <div className="Home">
@@ -32,7 +33,8 @@ function Home() {
           {/* <Homepage /> */}
           {/* <About /> */}
           {/* <Contact /> */}
-          <Portfolio />
+          {/* <Portfolio /> */}
+          <ProjectView />
         </div>
       </div>
       <div className="footer">

@@ -38,5 +38,9 @@
 }
 .Portfolio .projects-holder {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 1.5rem;
+  gap: 2rem;
 }/*# sourceMappingURL=Portfolio.css.map */
