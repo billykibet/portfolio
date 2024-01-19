@@ -1,8 +1,24 @@
 @import "../assets/variables/Color";
 @import "../assets/variables/Mixin";
 @font-face {
-  font-family: game;
+  font-family: boldB;
+  src: url("../assets/fonts/Inter-Black.ttf");
+}
+@font-face {
+  font-family: bold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: semi;
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: regular;
   src: url("../assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: light;
+  src: url("../assets/fonts/Inter-Light.ttf");
 }
 
 * {
@@ -10,7 +26,7 @@
   padding: 0;
   box-sizing: border-box;
   // outline: 1px solid red;
-  font-family: "game";
+  font-family: "regular";
 }
 ::-webkit-scrollbar {
   display: none;
@@ -19,6 +35,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $color_background;
+  color: $color_text_primary;
   .nav-bar {
     @include flex;
     width: 100%;
@@ -26,7 +43,7 @@
     padding: 0 3rem;
     .logo {
       // font-size: 1.5rem;
-      // font-family: "punk";
+      font-family: "bold";
     }
     .nav-links {
       @include flex;
@@ -34,6 +51,10 @@
       button {
         @include button;
         @include outline-dash;
+      }
+      .active {
+        color: $color_shine;
+        outline: 1px solid $color_shine;
       }
     }
   }
@@ -80,16 +101,18 @@
     width: 100%;
     height: 8vh;
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
+      font-family: "light";
     }
     .social-icons {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.1rem;
       margin-right: -0.5rem;
 
       img {
-        padding: 0.5rem;
+        padding: 0.6rem;
+        cursor: pointer;
         width: 2.5rem;
         height: 2.5rem;
       }

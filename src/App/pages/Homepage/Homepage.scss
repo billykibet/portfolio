@@ -7,13 +7,32 @@
   align-items: center;
   .homepage-text {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-direction: column;
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
+      font-family: "boldB";
+      display: flex;
+      flex-direction: column;
+      &::after {
+        content: "";
+        background: linear-gradient(
+          to right,
+          $color_background,
+          $color_text_primary
+        );
+        height: 0.4rem;
+        margin-top: 0.8rem;
+        width: 8rem;
+      }
     }
     h2 {
       font-size: 1.5rem;
+      font-family: "semi";
+      span {
+        font-family: "bold";
+        font-size: 1.55rem;
+      }
     }
     button {
       @include button;

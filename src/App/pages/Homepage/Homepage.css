@@ -6,26 +6,44 @@
 }
 .Homepage .homepage-text {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-direction: column;
 }
 .Homepage .homepage-text h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-family: "boldB";
+  display: flex;
+  flex-direction: column;
+}
+.Homepage .homepage-text h1::after {
+  content: "";
+  background: linear-gradient(to right, #0a192f, #e6f1ff);
+  height: 0.4rem;
+  margin-top: 0.8rem;
+  width: 8rem;
 }
 .Homepage .homepage-text h2 {
   font-size: 1.5rem;
+  font-family: "semi";
+}
+.Homepage .homepage-text h2 span {
+  font-family: "bold";
+  font-size: 1.55rem;
 }
 .Homepage .homepage-text button {
   all: unset;
-  height: 2.5rem;
+  height: 2.2rem;
+  font-size: 0.9rem;
   width: -moz-max-content;
   width: max-content;
   padding: 0 2rem;
-  outline: 1px solid #000000;
+  outline: 1px solid #e6f1ff;
+  font-family: "semi";
   cursor: pointer;
   padding: 0.3rem 3rem;
 }
 .Homepage .homepage-text button:hover {
-  outline: 1px solid #03d8f3;
-  color: #03d8f3;
+  outline: 1px solid #64ffda;
+  background-color: #64ffda;
+  color: #0a192f;
 }/*# sourceMappingURL=Homepage.css.map */

@@ -1,12 +1,28 @@
 @font-face {
-  font-family: game;
+  font-family: boldB;
+  src: url("../assets/fonts/Inter-Black.ttf");
+}
+@font-face {
+  font-family: bold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: semi;
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: regular;
   src: url("../assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: light;
+  src: url("../assets/fonts/Inter-Light.ttf");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "game";
+  font-family: "regular";
 }
 
 ::-webkit-scrollbar {
@@ -16,7 +32,8 @@
 .Home {
   width: 100vw;
   height: 100vh;
-  background-color: #fcee0c;
+  background-color: #0a192f;
+  color: #e6f1ff;
 }
 .Home .nav-bar {
   display: flex;
@@ -26,6 +43,9 @@
   height: 8vh;
   padding: 0 3rem;
 }
+.Home .nav-bar .logo {
+  font-family: "bold";
+}
 .Home .nav-bar .nav-links {
   display: flex;
   align-items: center;
@@ -34,17 +54,24 @@
 }
 .Home .nav-bar .nav-links button {
   all: unset;
-  height: 2.5rem;
+  height: 2.2rem;
+  font-size: 0.9rem;
   width: -moz-max-content;
   width: max-content;
   padding: 0 2rem;
-  outline: 1px solid #000000;
+  outline: 1px solid #e6f1ff;
+  font-family: "semi";
   cursor: pointer;
-  outline: 1px solid #000000;
+  outline: 1px solid #e6f1ff;
 }
 .Home .nav-bar .nav-links button:hover {
-  outline: 1px solid #03d8f3;
-  color: #03d8f3;
+  outline: 1px solid #64ffda;
+  background-color: #64ffda;
+  color: #0a192f;
+}
+.Home .nav-bar .nav-links .active {
+  color: #64ffda;
+  outline: 1px solid #64ffda;
 }
 .Home .main-body {
   display: flex;
@@ -57,7 +84,7 @@
 .Home .main-body .avator-holder {
   width: 40%;
   position: relative;
-  outline: 1px solid #000000;
+  outline: 1px solid #e6f1ff;
   height: 100%;
 }
 .Home .main-body .avator-holder img {
@@ -67,7 +94,7 @@
      object-fit: cover;
 }
 .Home .main-body .avator-holder .avator-overlay {
-  background: #fcee0c;
+  background: #0a192f;
   height: 100%;
   width: 100%;
   opacity: 0.5;
@@ -78,7 +105,7 @@
 }
 .Home .main-body .routes-holder {
   width: 60%;
-  outline: 1px solid #000000;
+  outline: 1px solid #e6f1ff;
   padding: 3rem 3rem;
   height: 100%;
   overflow-y: scroll;
@@ -92,16 +119,18 @@
   height: 8vh;
 }
 .Home .footer p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-family: "light";
 }
 .Home .footer .social-icons {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.1rem;
   margin-right: -0.5rem;
 }
 .Home .footer .social-icons img {
-  padding: 0.5rem;
+  padding: 0.6rem;
+  cursor: pointer;
   width: 2.5rem;
   height: 2.5rem;
 }/*# sourceMappingURL=Home.css.map */

@@ -1,5 +1,5 @@
 .SkillItem {
-  outline: 1px solid #000000;
+  outline: 1px solid #e6f1ff;
   display: flex;
   padding: 1rem;
   justify-content: space-between;
@@ -19,11 +19,12 @@
 }
 .SkillItem .skill-text h4 {
   font-size: 1rem;
+  font-family: "semi";
 }
 .SkillItem .skill-text p {
-  color: rgba(0, 0, 0, 0.8);
+  color: #ccd6f6;
   font-size: 0.9rem;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   line-height: 1.3rem;
   font-size: 0.8rem;
   margin-bottom: unset;

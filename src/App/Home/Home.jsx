@@ -15,7 +15,7 @@ function Home() {
 
         <div className="nav-links">
           <button className="cyber-button">Home</button>
-          <button>About</button>
+          <button className="active">About</button>
           <button>Portfolio</button>
           <button>Contact</button>
         </div>
@@ -29,8 +29,8 @@ function Home() {
         </div>
         <div className="routes-holder">
           {/* <Homepage /> */}
-          <About />
-          {/* <Contact /> */}
+          {/* <About /> */}
+          <Contact />
         </div>
       </div>
       <div className="footer">

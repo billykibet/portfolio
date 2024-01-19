@@ -8,14 +8,19 @@
 @mixin button() {
   all: unset;
 
-  height: 2.5rem;
+  height: 2.2rem;
+  font-size: 0.9rem;
+
   width: max-content;
   padding: 0 2rem;
   outline: 1px solid $color_text_primary;
+  font-family: "semi";
+
   cursor: pointer;
   &:hover {
     outline: 1px solid $color_shine;
-    color: $color_shine;
+    background-color: $color_shine;
+    color: $color_background;
   }
 }
 @mixin outline-dash() {
@@ -23,8 +28,9 @@
 }
 @mixin header() {
   font-size: 2rem;
-
+  font-family: "bold";
   display: flex;
+  color: $color_text_primary;
   flex-direction: column;
   &::after {
     content: "";
@@ -33,7 +39,7 @@
       $color_background,
       $color_text_primary
     );
-    height: 0.6rem;
+    height: 0.4rem;
     margin-top: 0.8rem;
     width: 8rem;
   }
@@ -41,10 +47,11 @@
 
 @mixin sub-header() {
   font-size: 1.5rem;
+  font-family: "semi";
 }
 
 @mixin paragraph() {
   color: $color_text_secondary;
   font-size: 0.9rem;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
 }
